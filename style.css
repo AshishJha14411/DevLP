@@ -1,0 +1,241 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: #f5f5f5;
+overflow-x: hidden;
+}
+header{
+  background-color: #3400ff;
+  margin: -2rem;
+  padding: 3rem;
+  height: 40vh;
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+}
+a{
+  margin-right: 1rem;
+}
+a[class=nav-item]{
+  padding-right: rem;
+  color: white;
+}
+a[class=nav-item-active]{
+  background-color: white;
+  padding: .5rem;
+  margin-top: -.5rem;
+  width: 4rem;
+  text-align: center;
+  color: #4618FE;
+  border-radius: 5px;
+}
+.logo{
+  margin-top: -2rem;
+  margin-left: 2rem;
+}
+svg[class=nav-item]{
+  width: 2rem;
+  height: 1.7rem;
+  margin-right: 1rem;
+  margin-top: -.2rem;
+}
+.header-text{
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  margin-left: 2rem;
+}
+.header-text img{
+  width: 4rem;
+  height: .2rem;
+  margin-top: -2rem;
+}
+.header-text h2,p{
+  color: white;
+  padding-bottom: -4rem;
+}
+.header-text p{
+  position: relative;
+  margin-top: -.7rem;
+}
+.header-image{
+  float: right;
+  margin-top: -14rem;
+  margin-right: -2rem;
+}
+.companies{
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+.companies a{
+  font-family: 'Righteous';
+  text-decoration: none;
+  color: black;
+}
+.api{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.api-heading{
+  font-size: 30px;
+  margin-top: 4rem;
+}
+/* 
+Blog Section */
+.blog-heading{
+  margin-left: 2rem;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  padding: 2rem;
+}
+.card-active{
+  width: 20rem;
+  padding: 2rem;
+  border-radius: 17px;
+  box-shadow: 2px 2px  5px gray;
+}
+.card-body{
+  color: black;
+}
+.blog-cards{
+  display: flex;
+}
+.blog-card{
+  position: relative;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  height: 17.9rem;
+  justify-content: space-between;
+  border-top-left-radius: 47px;
+  border-bottom-left-radius: 17px;
+  box-shadow: 2px 2px  5px gray;
+  width: 50rem;
+}
+.blog-content{
+  position: absolute;
+  margin-left: 30rem;
+  z-index: 2;
+}
+.blog-author{
+  position: absolute;
+  z-index: 3;
+  margin-top: 1rem;
+  margin-left: 9.5rem;
+  font-size: 13px;
+}
+.blog-bottom{
+  position: absolute;
+  z-index: 4;
+  margin-top: 1.5rem;
+  margin-left: 23rem;
+}
+/* 
+FaQ Section */
+
+.faq-section{
+  background-color: #E9EDFF;
+  display: flex;
+  margin: 2rem -1rem 2rem -1rem;
+  font-family: 'Righteous';
+  padding: 1rem 2rem 1rem 3rem;
+  height: 17rem;
+}
+.faq-image{
+  margin-top: -1.6rem;
+  margin-left: 7rem;
+  transform: scale(.93);
+}
+.faq-content button{
+  width: 9rem;
+  height: 2rem;
+  margin-top: -1rem;
+  background-color: #5A31FC;
+  border: none;
+  color: white;
+
+}
+/* 
+Download Section 
+*/
+
+.download-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 5rem 1rem 5rem;
+}
+.download-content span{
+  font-size: 22px;
+}
+.download-email form input{
+  position: relative;
+  width: 25rem;
+  height: 1.7rem;
+  border-radius: 56px;
+  padding: .5rem;
+  background-color: #E9EDFF;
+  padding-left: 9rem;
+  border: gray;
+}
+
+.download-email form button{
+  position: relative;
+  margin-right: 1rem;
+  margin-left: -7.5rem ;
+  height: 2.4rem;
+  width: 7rem;
+  border: rgb(50, 48, 48);
+  border-radius: 27px;
+  background-color: #5A31FC;
+  color: white;
+}
+/* 
+Footer section */
+.footer-section{
+  background-color:  #5A31FC;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  height: 7rem;
+  margin: 0 -2rem -2rem -2rem;
+}
+li{
+  list-style: none;
+}
+.footer-logo{
+  margin-left: 3rem;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+.list-items{
+  padding-right: .8rem;
+  border-right: 2px solid rgb(206, 194, 194);
+}
+.logos-list{
+  display: flex;
+  justify-content: space-between;
+  width: 17rem;
+  margin-left: -26rem;
+}
+.footer-right div{
+  margin-left: -19rem;
+}
+.footer-logos{
+
+  margin: 1rem 1rem 0 1rem;
+}
