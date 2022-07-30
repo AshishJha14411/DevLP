@@ -7,7 +7,7 @@ This is a sample page. The website focuses on implemention of HTML and CSS to cr
 
 ### The deployed Version Link
 
-[Dev Page]()
+[Dev Page](https://developerpage.netlify.app/)
 
 ### SnapShot of the Webpage
 
