@@ -24,10 +24,12 @@ a{
   margin-right: 1rem;
 }
 a[class=nav-item]{
-  padding-right: rem;
+  padding-right: 2rem;
   color: white;
+  cursor: pointer;
 }
-a[class=nav-item-active]{
+a[class=nav-item-active], .nav-item:hover{
+  transition: ease-in .3s;
   background-color: white;
   padding: .5rem;
   margin-top: -.5rem;
@@ -79,6 +81,7 @@ svg[class=nav-item]{
   text-decoration: none;
   color: black;
 }
+
 .api{
   margin-left: 2rem;
   margin-right: 2rem;
@@ -99,8 +102,9 @@ Blog Section */
 .card{
   padding: 2rem;
 }
-.card-active{
-  width: 20rem;
+.card-active, .card:hover{
+  transition: ease .3s;
+  width: 18rem;
   padding: 2rem;
   border-radius: 17px;
   box-shadow: 2px 2px  5px gray;
@@ -122,6 +126,10 @@ Blog Section */
   border-bottom-left-radius: 17px;
   box-shadow: 2px 2px  5px gray;
   width: 50rem;
+}
+.blog-card:hover{
+  transition: ease-in .3s;
+  transform: scale(1.05);
 }
 .blog-content{
   position: absolute;
@@ -239,19 +247,22 @@ li{
 
   margin: 1rem 1rem 0 1rem;
 }
-
+ 
 @media(max-width: 575.98px){
+
   header{
     margin: -2rem;
     padding: 3rem;
-    height: 70vh;
+    height: 35rem;
   }
   nav{
     position: absolute;
-    margin: 2.5rem 2rem 1rem 5rem;
+    margin: 2.5rem 2rem 1rem 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
     height: 15rem;
   }
   a{
@@ -263,10 +274,10 @@ li{
   .logo{
     position: absolute;
     margin-top: -0.4rem;
-    margin-left: 3rem;
+    margin-left: 13rem;
   }
   svg[class=nav-item]{
-    margin-left: -2.2rem;
+    margin-left: -8.2rem;
     margin-top: -3rem;
   }
   .header-text{
@@ -280,10 +291,11 @@ li{
     
   }
   .header-image{
+    position: absolute;
     float: right;
-    transform: scale(.4);
-    margin-top: -14rem;
-    margin-right: 7.6rem;
+    transform: scale(.6);
+    margin-top: -20rem;
+    margin-left: 7rem;
   }
   .companies{
     display: flex;
@@ -296,7 +308,7 @@ li{
     width: 10rem;
    }
   .api{
-    margin-left: 2rem;
+    margin-left: 12rem;
     margin-right: 2rem;
   }
   .api-heading{
@@ -306,7 +318,7 @@ li{
   /* 
   Blog Section */
   .blog-heading{
-    margin-left: 2rem;
+    margin-left: 12rem;
     
     font-size: .8rem;
   }
@@ -314,6 +326,7 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
   }
   .card{
     transform: scale(.8);
@@ -334,13 +347,11 @@ li{
   }
   .blog-card{
     height: 40rem;
-    width: 15rem;
-    margin-left: 2rem;
+    width: 15.6rem;
+    margin-left: 12rem;
     margin-bottom: 2rem;
   }
   .blog-image{
-    transform: scale(.9);
-    margin-top: -2.5rem;
     margin-right: 2rem;
     padding-right: 1rem;
   }
@@ -368,7 +379,7 @@ li{
     background-color: #E9EDFF;
     display: flex;
     flex-direction: column;
-    margin: 2rem -1rem 2rem -1rem;
+    margin: 2rem -1rem 2rem 11rem;
     font-family: 'Righteous';
     font-size: 1rem;
     padding: 1rem 2rem 1rem 2rem;
@@ -398,7 +409,7 @@ li{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin: 0 0 0 25rem;
   }
   .download-content{
     font-size: 1rem;
@@ -438,11 +449,11 @@ li{
   }
 
 }
-@media(max-width: 769px){
+@media (min-width: 576px) and (max-width: 769px){
   header{
     margin: -2rem;
     padding: 3rem;
-    height: 25vh;
+    height: 25rem;
     display: flex;
     flex-direction: column;
   }
@@ -474,16 +485,16 @@ li{
     flex-direction: column;
     width: 10rem;
     font-size: .7rem;
-    margin-top: 8rem;
+    margin-top: 12rem;
     margin-left: 1rem;
     margin-bottom: 5rem;
     
   }
   .header-image{
     float: right;
-    transform: scale(.4);
-    margin-top: -24rem;
-    margin-right: 4.9rem;
+    transform: scale(.6);
+    margin-top: -18rem;
+    margin-right: -8.9rem;
   }
   .companies{
     display: flex;
@@ -506,7 +517,7 @@ li{
   /* 
   Blog Section */
   .blog-heading{
-    margin-left: 8rem;
+    margin-left: 12rem;
     
     font-size: .8rem;
   }
@@ -516,13 +527,11 @@ li{
     justify-content: space-between;
   }
   .card{
-    transform: scale(.8);
     margin-left: -4rem;
-    margin-top: -2rem;
+    margin-top: 1rem;
   }
   .card-active{
     margin-left: -4rem;
-    transform: scale(.8);
   }
   .card-body{
     color: black;
@@ -532,14 +541,12 @@ li{
   }
   .blog-card{
     height: 40rem;
-    width: 15rem;
-    margin-left: 0rem;
+    width: 15.6rem;
+    margin-left: 1rem;
     margin-right: 0;
     margin-bottom: 2rem;
   }
   .blog-image{
-    transform: scale(.9);
-    margin-top: -2.5rem;
     margin-right: 2rem;
     padding-right: 1rem;
   }
@@ -575,7 +582,7 @@ li{
     width: 32rem;
   }
   .faq-image{
-    margin-top: -1  rem;
+    margin-top: -1rem;
     margin-left: -5rem;
     transform: scale(.83);
   }
@@ -597,7 +604,7 @@ li{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin: 0 0 0 15rem;
   }
   .download-content{
     font-size: 1rem;
@@ -641,6 +648,7 @@ li{
   }
 }
 @media(min-width: 1920px){
+  
   .blog-heading{
     text-align: center;
   }
