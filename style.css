@@ -105,7 +105,7 @@ Blog Section */
   padding: 2rem;
 }
 .card-active, .card:hover{
-  transition: ease .3s;
+  transition: ease-in-out .3s;
   width: 18rem;
   padding: 2rem;
   border-radius: 17px;
