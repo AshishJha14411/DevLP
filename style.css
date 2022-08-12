@@ -15,10 +15,12 @@ header{
   margin: -2rem;
   padding: 3rem;
   height: 40vh;
+  width: 100vw;
 }
 nav{
   display: flex;
   justify-content: flex-end;
+  margin-right: 5rem;
 }
 a{
   margin-right: 1rem;
@@ -118,6 +120,7 @@ Blog Section */
 .blog-card{
   position: relative;
   margin-right: 2rem;
+  flex-wrap: wrap;
   margin-left: 2rem;
   display: flex;
   height: 17.9rem;
@@ -125,16 +128,16 @@ Blog Section */
   border-top-left-radius: 47px;
   border-bottom-left-radius: 17px;
   box-shadow: 2px 2px  5px gray;
-  width: 50rem;
+  width: 60rem;
 }
 .blog-card:hover{
   transition: ease-in .3s;
   transform: scale(1.05);
 }
 .blog-content{
-  position: absolute;
-  margin-left: 30rem;
   z-index: 2;
+  padding-right: 2rem;
+  padding-top: .5rem;
 }
 .blog-author{
   position: absolute;
@@ -248,7 +251,7 @@ li{
   margin: 1rem 1rem 0 1rem;
 }
  
-@media(max-width: 575.98px){
+@media(max-width: 575px){
 
   header{
     margin: -2rem;
@@ -356,7 +359,7 @@ li{
     padding-right: 1rem;
   }
   .blog-content{
-    margin-top: 23rem;
+    margin-top: 3rem;
     margin-left: 1rem;
     z-index: 2;
   }
@@ -513,18 +516,19 @@ li{
   .api-heading{
     font-size: 1.5rem;
     margin-top: 4rem;
+    margin-left: 5rem;
   }
   /* 
   Blog Section */
   .blog-heading{
     margin-left: 12rem;
-    
     font-size: .8rem;
   }
   .cards{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 7rem;
   }
   .card{
     margin-left: -4rem;
@@ -542,8 +546,7 @@ li{
   .blog-card{
     height: 40rem;
     width: 15.6rem;
-    margin-left: 1rem;
-    margin-right: 0;
+    margin-left: 2rem;
     margin-bottom: 2rem;
   }
   .blog-image{
@@ -551,7 +554,7 @@ li{
     padding-right: 1rem;
   }
   .blog-content{
-    margin-top: 23rem;
+    margin-top: 3rem;
     margin-left: 1rem;
     z-index: 2;
   }
@@ -648,18 +651,21 @@ li{
   }
 }
 @media(min-width: 1920px){
-  
+  header{
+    width: 150rem;
+  }
   .blog-heading{
     text-align: center;
   }
   .blog-cards{
     margin-top: 4rem;
     margin-bottom: 3rem;
-    margin-left: 30rem;
+    margin-left: 10rem;
   }
   .blog-card{
     transform: scale(1.2);
     margin-right: 15rem;
+    min-width: 50rem;
   }
   .faq-section{
     height: 30rem;
