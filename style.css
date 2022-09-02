@@ -250,32 +250,29 @@ li{
 
   margin: 1rem 1rem 0 1rem;
 }
- 
+.fa-bars{
+  color: white;
+  display: none;
+}
 @media(max-width: 575px){
 
   header{
     margin: -2rem;
     padding: 3rem;
-    height: 35rem;
+    height: 19rem;
   }
   nav{
-    position: absolute;
-    margin: 2.5rem 2rem 1rem 15rem;
+    display: none;
+  }
+  .logoclass{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    height: 15rem;
+    justify-content: space-around;
   }
-  a{
-    margin-top: .4rem;
-  }
-  .nav-item-active{
-    margin-top: 10rem;
+  .fa-bars{
+    display: block;
+    font-size: 2rem;
   }
   .logo{
-    position: absolute;
     margin-top: -0.4rem;
     margin-left: 13rem;
   }
@@ -288,7 +285,7 @@ li{
     flex-direction: column;
     width: 10rem;
     font-size: .7rem;
-    margin-top: 22rem;
+    margin-top: 7rem;
     margin-left: 1rem;
     margin-bottom: 5rem;
     
@@ -298,7 +295,7 @@ li{
     float: right;
     transform: scale(.6);
     margin-top: -20rem;
-    margin-left: 7rem;
+    margin-left: 9rem;
   }
   .companies{
     display: flex;
@@ -454,41 +451,39 @@ li{
 }
 @media (min-width: 576px) and (max-width: 769px){
   header{
-    margin: -2rem;
     padding: 3rem;
-    height: 25rem;
+    height: 20rem;
+    width: 105vw;
     display: flex;
     flex-direction: column;
   }
   nav{
-    position: absolute;
-    margin: 2.5rem 2rem 1rem 1rem;
-    justify-content: space-between;
-    height: 15rem;
+    display: none;
   }
-  a{
-    margin-top: .4rem;
+  .logoclass{
+    display: flex;
+    justify-content: space-around;
+    min-height: 5rem;
+    min-width: 100vw;
   }
-  .nav-item-active{
-    margin-top: 10rem;
-    height: 1.7rem;
-    margin-left: 3rem;
+  .fa-bars{
+    display: block;
+    font-size: 2rem;
+    margin-right: 40%;
   }
   .logo{
-    position: absolute;
-    margin-top: -0.4rem;
-    margin-left: 10rem;
-  }
-  svg[class=nav-item]{
-    margin-left: -9.2rem;
     margin-top: 0rem;
+    width: 10rem;
+    height: 4rem;
+    margin-right: 4rem;
   }
+
   .header-text{
     display: flex;
     flex-direction: column;
     width: 10rem;
     font-size: .7rem;
-    margin-top: 12rem;
+    margin-top: 7rem;
     margin-left: 1rem;
     margin-bottom: 5rem;
     
@@ -496,8 +491,8 @@ li{
   .header-image{
     float: right;
     transform: scale(.6);
-    margin-top: -18rem;
-    margin-right: -8.9rem;
+    margin-top: -50%;
+    margin-right: -14%;
   }
   .companies{
     display: flex;
@@ -521,18 +516,17 @@ li{
   /* 
   Blog Section */
   .blog-heading{
-    margin-left: 12rem;
+    text-align: center;
     font-size: .8rem;
   }
   .cards{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 7rem;
+    margin: auto;
   }
   .card{
-    margin-left: -4rem;
-    margin-top: 1rem;
+    margin: auto;
   }
   .card-active{
     margin-left: -4rem;
@@ -546,7 +540,7 @@ li{
   .blog-card{
     height: 40rem;
     width: 15.6rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
     margin-bottom: 2rem;
   }
   .blog-image{
@@ -652,7 +646,7 @@ li{
 }
 @media(min-width: 1920px){
   header{
-    width: 150rem;
+    width: 100vw;
   }
   .blog-heading{
     text-align: center;
@@ -664,8 +658,9 @@ li{
   }
   .blog-card{
     transform: scale(1.2);
-    margin-right: 15rem;
+    margin-right: 10rem;
     min-width: 50rem;
+    margin-bottom: 4rem;
   }
   .faq-section{
     height: 30rem;
